@@ -12,7 +12,7 @@ export function Header() {
     return(
         <header>
             <nav className="h-20 w-full flex justify-between items-center bg-corHeader ">
-                <Link className="mx-8" to="/"> <img src={logo} alt="Logo da empresa valART" className=" w-[70%] h-auto md:w-[50%] md:h-auto"/></Link>
+                <Link className="mx-8" to="/"> <img src={logo} alt="Logo da empresa valART" className=" max-w-[70%] h-auto md:max-w-[50%] md:h-auto"/></Link>
                 <div className="flex items-center justify-center gap-4 mx-8 p-1">
                     <Link to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
                     <Link to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
