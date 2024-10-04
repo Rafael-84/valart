@@ -11,9 +11,9 @@ export default {
         'corHeader' : "#FEFEFE",
       },
       backgroundImage: {
-        'bgMain' : "url(src/assets/main/fundoMain.png)",        
-        'bgEscolher' : "url(src/assets/main/fundoEscolher.png)",        
-        'bgContato' : "url(src/assets/main/fundoContact.png)",        
+        'bgMain' : "url(../src/assets/main/fundoMain.png)",        
+        'bgEscolher' : "url(../src/assets/main/fundoEscolher.png)",        
+        'bgContato' : "url(../src/assets/main/fundoContact.png)",        
       },
       screens: {
         '4k': '2560px',
