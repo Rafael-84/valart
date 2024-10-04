@@ -18,10 +18,10 @@ export function Home() {
     return (
         <main className="bg-corHeader">
             <Header />
-            <section className="w-full flex items-center h-full bg-bgMain bg-fundo bg-no-repeat bg-opacity-80  w-full flex items-center justify-center flex-col bg-bgMain bg-cover md:h-[calc(560px-80px)] md:bg-bgMain md:bg-cover ">
+            <section className="w-full flex items-center justify-center flex-col bg-fundo bg-bgMain bg-cover bg-no-repeat  bg-opacity-75 md:h-[calc(560px-80px)] md:bg-bgMain md:bg-cover ">
                 <div className="flex flex-col items-center justify-center h-full md:w-full xl:w-11/12">
                     <div className="flex relative  justify-center items-center ">
-                        <img src={logo} className=" w-32  md:mb-2 " />
+                        <img src={logo} alt="Logo da empresa valART" className=" w-32  md:mb-2 " />
                     </div>
                     <div className="flex flex-col justify-center items-center 4k:w-7/12 text-start md:w-3/4  md:ml-[-220px] lg:w-1/2 xl:w-1/2  4k:ml-0">
                         <p className="text-indigo-800 w-11/12  mx-auto text-center  font-medium md:w-3/4 md:ml-auto md:text-center 4k:w-2/6">
@@ -31,7 +31,7 @@ export function Home() {
                     </div>
                     <img src={imgHome} alt="teste" className="hidden md:flex md:absolute md:w-auto md:h-[317px] md:right-14 md:top-[270px] md:rounded-sm md:opacity-95 md:shadow-lg md:shadow-indigo-300  lg:right-44 xl:right-[350px] 2xl:right-96 4k:right-[800px] " />
                 </div>
-                <Link to={urlWhatsApp} target="_blank" ><FaWhatsapp className="hidden md:flex md:fixed md:left-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132"  /></Link>
+                <Link to={urlWhatsApp} target="_blank" ><FaWhatsapp className="hidden md:flex md:fixed md:left-20 md:top-[530px] xl:top-[75%] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132"  /></Link>
             </section>
             <section className="flex items-center justify-center flex-col bg-corHeader">
                 <h1 className="text-center my-8 font-bold text-lg text-rose-700 md:mt-28 md:mb-5  ">Nossos Serviços</h1>
