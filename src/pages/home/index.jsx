@@ -31,7 +31,7 @@ export function Home() {
                     </div>
                     <img src={imgHome} alt="teste" className="hidden md:flex md:absolute md:w-auto md:h-[317px] md:right-14 md:top-[270px] md:rounded-sm md:opacity-95 md:shadow-lg md:shadow-indigo-300  lg:right-44 xl:right-[350px] 2xl:right-96 4k:right-[800px] " />
                 </div>
-                <Link to={urlWhatsApp} target="_blank" ><FaWhatsapp alt="Botão flutuante que abrirá o contato da empresa no WhatsApp" className="hidden md:flex md:fixed md:left-20 md:top-[530px] xl:top-[75%] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132"  /></Link>
+                <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" ><FaWhatsapp  className="hidden md:flex md:fixed md:left-20 md:top-[530px] xl:top-[75%] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132"  /></Link>
             </section>
             <section className="flex items-center justify-center flex-col bg-corHeader">
                 <h1 className="text-center my-8 font-bold text-lg text-rose-700 md:mt-28 md:mb-5  ">Nossos Serviços</h1>
