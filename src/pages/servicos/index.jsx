@@ -84,7 +84,7 @@ export function Servicos() {
     <main>
       <Header />
       <section className="w-full flex justify-center h-full">
-        <div className="bg-fundo bg-bgMain bg-cover bg-no-repeat bg-opacity-80 w-full h-full flex items-center justify-center">
+        <div className="bg-bgMain bg-fundo bg-cover bg-no-repeat bg-opacity-80 w-full h-full flex items-center justify-center">
           <div className="hidden md:flex md:relative md:justify-center md:items-center md:left-20 md:top-32 lg:left-44 lg:top-28 xl:left-96 xl:top-24 2xl:left-[450px] 4k:left-[950px]">
             <img src={imgHome} alt="Homem utilizando uma ferramenta realizando um trabalho na parede" className="shadow-lg shadow-indigo-300 md:w-[240px] md:h-[280px] md:rounded-sm lg:w-[250px] lg:h-[290px] lg:h-[260px]" />
           </div>

@@ -18,7 +18,7 @@ export function Home() {
     return (
         <main className="bg-corHeader">
             <Header />
-            <section className="w-full flex items-center h-full bg-fundo bg-no-repeat bg-opacity-80  w-full flex items-center justify-center flex-col bg-bgMain bg-cover md:h-[calc(560px-80px)] md:bg-bgMain md:bg-cover ">
+            <section className="w-full flex items-center h-full bg-bgMain bg-fundo bg-no-repeat bg-opacity-80  w-full flex items-center justify-center flex-col bg-bgMain bg-cover md:h-[calc(560px-80px)] md:bg-bgMain md:bg-cover ">
                 <div className="flex flex-col items-center justify-center h-full md:w-full xl:w-11/12">
                     <div className="flex relative  justify-center items-center ">
                         <img src={logo} className=" w-32  md:mb-2 " />
