@@ -35,7 +35,7 @@ export function FeedbackAndContact() {
                     </div>
                 </div>
             </section>
-            <section className="bg-indigo-600 p-2 my-8 bg-bgContato bg-cover bg-no-repeat opacity-90" >
+            <section className=" p-2 my-8 bg-bgContato bg-cover bg-no-repeat opacity-90" >
                 <div className="flex flex-col items-center mx-3 my-5 gap-7">
                     <p className="text-corHeader font-bold text-lg">Entre em Contato Conosco</p>
                     <span className="text-corHeader font-medium text-center ">Temos certeza, que apreciará a qualidade dos nossos serviços. Estamos à sua disposição, para entender suas necessidades e lhe atender com rapidez e qualidade.</span>

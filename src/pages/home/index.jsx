@@ -57,8 +57,11 @@ export function Home() {
                     <span className="  mx-3 text-center text-indigo-900 font-bold">Temos a melhor solução para a sua construção, atendendo desde a sua residência até a sua empresa, garantindo qualidade e inovação em cada projeto com a Valart!</span>
                 </div>
             </section>
-            <FeedbackAndContact />
-            <Footer />
+            <section>
+                <FeedbackAndContact />
+                <Footer />
+            </section>
+            
         </main>
     )
 }
