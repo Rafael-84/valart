@@ -109,7 +109,7 @@ export function Servicos() {
             <Link to={urlWhatsApp} target="_blank" className="my-10 mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Entrar em Contato</Link>
           </div>
         </div>
-        <Link to={urlWhatsApp} target="-blank" ><FaWhatsapp className="hidden md:flex md:fixed md:right-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 " size={80} color="#0cb132"  /></Link>
+        <Link to={urlWhatsApp} target="-blank" ><FaWhatsapp alt="Botão flutuante que abrirá o contato da empresa no WhatsApp" className="hidden md:flex md:fixed md:right-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 " size={80} color="#0cb132"  /></Link>
       </section>
       <section>
         <h2 className="text-center  font-bold text-lg text-rose-700 mt-10 mb-5 md:mt-36 md:mb-10 lg:mb-0  " >Alguns de nossos trabalhos</h2>
