@@ -16,7 +16,7 @@ export function Home() {
     const urlWhatsApp = `https://wa.me/${numeroTel}`;
 
     return (
-        <main className="bg-corHeader">
+        <main>
             <Header />
             <section className="w-full flex items-center justify-center flex-col bg-fundo bg-bgMain bg-cover bg-no-repeat   md:h-[calc(560px-80px)]  ">
                 <div className="flex flex-col items-center justify-center h-full md:w-full xl:w-11/12">
