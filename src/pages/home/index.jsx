@@ -56,12 +56,9 @@ export function Home() {
                     <p className="mx-3 text-center text-indigo-900 my-10 md:mb-8 ">Na Valart, realizamos serviços completos, desde a construção até o acabamento, com gessos de diversas opções para transformar seus sonhos em realidade! </p>
                     <span className="  mx-3 text-center text-indigo-900 font-bold">Temos a melhor solução para a sua construção, atendendo desde a sua residência até a sua empresa, garantindo qualidade e inovação em cada projeto com a Valart!</span>
                 </div>
-            </section>
-            <section>
-                <FeedbackAndContact />
-                <Footer />
-            </section>
-            
+            </section>            
+            <FeedbackAndContact />
+            <Footer />
         </main>
     )
 }
