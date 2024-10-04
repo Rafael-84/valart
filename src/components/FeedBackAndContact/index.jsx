@@ -8,7 +8,7 @@ export function FeedbackAndContact() {
     const urlWhatsApp = `https://wa.me/${numeroTel}`;
 
     return (
-        <main>
+        <main className="z-20">
             <section className="flex items-center justify-center w-full h-96 bg-bgEscolher bg-cover bg-no-repeat  mt-10 mb-8 md:flex md:items-center md:justify-center md:mt-24 md:h-72" >
                 <div className="flex  items-center justify-center w-full h-72 mx-1 ">
                    
