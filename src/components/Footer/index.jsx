@@ -20,7 +20,7 @@ export function Footer() {
             <div className="flex flex-col gap-5 mt-5 md:flex md:flex-row md:items-center md:justify-between md:w-full lg:w-10/12 4k:w-1/2">
                 <div className='md:ml-16'>
                     <h2 className="text-center font-bold text-lg text-rose-700 ">Contato</h2>
-                    <div className="flex items-center justify-center gap-2 text-sm text-center my-2 text-indigo-800 font-medium md:text-base"><HiOutlineMail size={20}/><Link className='hover:text-rose-700'>{email}</Link></div>
+                    <div className="flex items-center justify-center gap-2 text-sm text-center my-2 text-indigo-800 font-medium md:text-base"><HiOutlineMail size={20}/><Link to={email} className='hover:text-rose-700'>{email}</Link></div>
                     <div className="flex items-center justify-center gap-2  text-sm text-center text-indigo-800 font-medium md:text-base"><FaPhone size={20} /><Link to={urlWhatsApp}  target="_blank" className='hover:text-rose-700 '>Telefone: {telefone} </Link></div>
                 </div>
                 <di className='md:mr-16'>
