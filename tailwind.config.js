@@ -13,7 +13,8 @@ export default {
       backgroundImage: {
         'bgMain' : "url(../src/assets/main/fundoMain.png)",        
         'bgEscolher' : "url(../src/assets/main/fundoEscolher.png)",        
-        'bgContato' : "url(../src/assets/main/fundoContact.png)",        
+        'bgContato' : "url(../src/assets/main/fundoContact.png)",
+        'bgFundoHeader' : "url(../src/assets/header/fundoHeader.png)" 
       },
       screens: {
         '4k': '2560px',

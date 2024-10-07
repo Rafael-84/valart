@@ -3,6 +3,7 @@ import logo from '../../assets/header/logo-valart.png'
 
 import { FaInstagram } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
 
 export function Footer() {
 
@@ -10,15 +11,16 @@ export function Footer() {
     const numeroTel = "5511969305119";
     const urlWhatsApp = `https://wa.me/${numeroTel}`;
 
-    const insta = "@valart_loja"
-    const telefone = "(11)96930-5119"
+    const insta = "@valart_loja";
+    const telefone = "(11)96930-5119";
+    const email = "contatovalart@gmail.com";
 
     return (
         <footer className="flex flex-col items-center bg-fundo mt-16  ">
             <div className="flex flex-col gap-5 mt-5 md:flex md:flex-row md:items-center md:justify-between md:w-full lg:w-10/12 4k:w-1/2">
                 <div className='md:ml-16'>
                     <h2 className="text-center font-bold text-lg text-rose-700 ">Contato</h2>
-                    <div className="text-sm text-center my-2 text-indigo-800 font-medium md:text-base"><p>Email: email.exemplo@email.com</p></div>
+                    <div className="flex items-center justify-center gap-2 text-sm text-center my-2 text-indigo-800 font-medium md:text-base"><HiOutlineMail size={20}/><Link className='hover:text-rose-700'>{email}</Link></div>
                     <div className="flex items-center justify-center gap-2  text-sm text-center text-indigo-800 font-medium md:text-base"><FaPhone size={20} /><Link to={urlWhatsApp}  target="_blank" className='hover:text-rose-700 '>Telefone: {telefone} </Link></div>
                 </div>
                 <di className='md:mr-16'>

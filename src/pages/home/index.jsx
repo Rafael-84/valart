@@ -18,7 +18,7 @@ export function Home() {
     return (
         <main>
             <Header />
-            <section className="w-full flex items-center justify-center flex-col bg-fundo bg-bgMain bg-cover bg-no-repeat   md:h-[calc(560px-80px)]  ">
+            <section className="w-full flex items-center justify-center flex-col bg-fundo bg-bgMain bg-cover bg-no-repeat   md:h-[calc(560px-64px)]  ">
                 <div className="flex flex-col items-center justify-center h-full md:w-full xl:w-11/12">
                     <div className="flex relative  justify-center items-center ">
                         <img src={logo} alt="Logo da empresa valART" className=" w-32 h-32  md:mb-2 " />
@@ -35,20 +35,25 @@ export function Home() {
             </section>
             <section className="flex items-center justify-center flex-col bg-corHeader">
                 <h1 className="text-center my-8 font-bold text-lg text-rose-700 md:mt-28 md:mb-5  ">Nossos Serviços</h1>
-                <div className="flex items-center justify-center flex-col my-9 gap-4 md:mx-10 md:gap-16 md:mb-20 md:w-11/12 md:gap-10 lg:flex-row xl:w-3/4 4k:w-1/2">
-                    <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[365px] md:gap-8 lg:h-[400px] lg:gap-7  4k:w-1/2">
+                <div className="flex items-center justify-center flex-col my-9 gap-4 md:mx-10 md:gap-16 md:mb-20 md:w-11/12 md:gap-10 lg:grid lg:grid-cols-2 xl:flex xl:flex-row xl:w-11/12 4k:w-1/2">
+                    <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] md:gap-8 lg:w-full lg:h-[300px] lg:justify-between xl:h-[350px] xl:gap-2  4k:w-1/2">
                         <h2 className="font-bold text-indigo-800 mt-2" >Em Gesso</h2>
                         <p className="mx-2 text-indigo-900 text-sm font-medium" >A Valart é especialista em serviços de gesso, oferecendo soluções como forro de gesso acartonado, drywall, sancas e molduras decorativas. Atuamos em reformas residenciais e comerciais, garantindo acabamentos de alta qualidade e estética impecável. Também realizamos instalação e manutenção de drywall, proporcionando conforto e praticidade aos seus ambientes.</p>
                         <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
                     </div>
-                    <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[365px] md:gap-10 lg:h-[400px] lg:gap-8 4k:w-1/2 ">
-                        <h2 className="font-bold text-indigo-800 mt-2">Construção</h2>
+                    <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] md:gap-10 lg:w-full lg:h-[300px] lg:justify-between lg:gap-8 xl:h-[350px] xl:gap-2 4k:w-1/2 ">
+                        <h2 className="font-bold text-indigo-800 mt-2">Construção & Reforma</h2>
                         <p className="mx-2  text-indigo-900 text-sm font-medium" >A Valart é a sua parceira ideal em construção e reforma, especializada em transformar espaços com qualidade e eficiência. Nossa equipe experiente garante acabamentos impecáveis em projetos residenciais e comerciais, sempre priorizando a estética e a funcionalidade. Confie na Valart para renovar seu ambiente com estilo e precisão!</p>
                         <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
                     </div>
-                    <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[365px] lg:h-[400px] lg:gap-2  4k:w-1/2 ">
-                        <h2 className="font-bold text-indigo-800 my-2">Manutenção</h2>
-                        <p className="mx-2  text-indigo-900 text-sm font-medium" >A Valart é sua parceira ideal para manutenção de espaços, oferecendo serviços especializados que garantem a durabilidade das instalações. Nossa equipe, com experiência em drywall e gesso, realiza manutenção preventiva e corretiva, assegurando acabamentos impecáveis e funcionalidade em ambientes residenciais e comerciais. Confie na Valart para manter seu espaço renovado e em perfeitas condições!</p>
+                    <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] lg:w-full lg:h-[300px] lg:justify-between lg:gap-8 xl:h-[350px] xl:gap-2  4k:w-1/2 ">
+                        <h2 className="font-bold text-indigo-800 my-2">Elétrica</h2>
+                        <p className="mx-2  text-indigo-900 text-sm font-medium" >A Valart é uma empresa especializada em serviços elétricos para residências e empresas. Oferece instalação e manutenção de sistemas elétricos, automação residencial, iluminação LED e adequações às normas de segurança. Com uma equipe qualificada, a Valart se destaca pela qualidade, eficiência e compromisso com a satisfação do cliente.</p>
+                        <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
+                    </div>
+                    <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] lg:w-full lg:h-[300px] lg:justify-between lg:gap-8 xl:h-[350px] xl:gap-2 4k:w-1/2 ">
+                        <h2 className="font-bold text-indigo-800 my-2">Stellframe</h2>
+                        <p className="mx-2  text-indigo-900 text-sm font-medium" >A Valart oferece serviços especializados em steel frame, com soluções rápidas e eficientes para a construção civil. Realiza projetos de estruturas metálicas leves, garantindo durabilidade e resistência. A empresa cuida de todas as etapas, da elaboração do projeto à execução, sempre focando em qualidade, agilidade e sustentabilidade.</p>
                         <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
                     </div>
                 </div>

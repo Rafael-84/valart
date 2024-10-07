@@ -11,9 +11,9 @@ export function Header() {
 
     return(
         <header>
-            <nav className="h-20 w-full flex justify-between items-center bg-corHeader ">
-                <Link className="mx-8" to="/"> <img src={logo} alt="Logo da empresa valART" className=" max-w-[70%] h-auto md:max-w-[50%] md:h-auto"/></Link>
-                <div className="flex items-center justify-center gap-4 mx-8 p-1">
+            <nav className="h-16 w-full p-8 flex justify-between items-center bg-bgFundoHeader bg-cover  bg-no-repeat bg-opacity-95">
+                <div> <img src={logo} alt="Logo da empresa valART" className=" max-w-[70%] h-auto md:w-[250px] md:relative md:top-[50px] z-50 md:h-auto"/></div>
+                <div className="flex items-center justify-center gap-4 p-1">
                     <Link to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
                     <Link to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
                     <Link to={urlWhatsApp} target="_blank" className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
