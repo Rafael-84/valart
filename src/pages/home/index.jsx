@@ -17,10 +17,10 @@ export function Home() {
 
     return (
         <main>
-            <section className="bg-bgMain bg-cover bg-no-repeat bg-opacity-75"  rel="preload">
+            <section className="bg-bgMain bg-cover bg-no-repeat bg-opacity-75">
                 <header>
                     <nav className="h-16 w-full p-8 flex justify-between items-center ">
-                        <div> <img src={logo} width={250} height={253} alt="Logo da empresa valART" className=" w-[100px] h-auto md:w-[150px] md:h-[150px] md:relative md:top-[50px] z-50 " /></div>
+                        <div> <img src={logo} width={193} height={195} alt="Logo da empresa valART" className=" max-w-[100px] h-auto md:max-w-[193px] md:max-h-[195px] md:relative md:top-[50px] z-50 " /></div>
                         <div className="flex items-center justify-center gap-4 p-1">
                             <Link to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
                             <Link to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
@@ -31,7 +31,7 @@ export function Home() {
                 <section className="w-full flex items-center justify-center flex-col     md:h-[calc(560px-64px)]  ">
                     <div className="flex flex-col items-center justify-center h-full md:w-full xl:w-11/12">
                         <div className="flex relative  justify-center items-center ">
-                            <img src={logo} alt="Logo da empresa valART" className=" w-32 h-32  md:mb-2 " />
+                            <img src={logo} alt="Logo da empresa valART" className=" max-w-32 max-h-32  md:mb-2 " />
                         </div>
                         <div className="flex flex-col justify-center items-center 4k:w-7/12 text-start md:w-3/4  md:ml-[-220px] lg:w-1/2 xl:w-1/2  4k:ml-0">
                             <p className="text-indigo-800 w-11/12  mx-auto text-center  font-medium md:w-3/4 md:ml-auto md:text-center 4k:w-2/6">
