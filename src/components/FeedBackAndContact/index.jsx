@@ -38,7 +38,7 @@ export function FeedbackAndContact() {
                 <div className="flex flex-col items-center mx-3 my-5 gap-7">
                     <p className="text-corHeader font-bold text-lg">Entre em Contato Conosco</p>
                     <span className="text-corHeader font-medium text-center ">Temos certeza, que apreciará a qualidade dos nossos serviços. Estamos à sua disposição, para entender suas necessidades e lhe atender com rapidez e qualidade.</span>
-                    <Link to={urlWhatsApp} target="_blank" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors " >Solicite um Orçamento</Link>
+                    <Link to={urlWhatsApp} className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors " >Solicite um Orçamento</Link>
                 </div>
             </section>
         </main>
