@@ -33,13 +33,13 @@ export function Home() {
                         <div className="flex relative  justify-center items-center ">
                             <img src={logo} title="Logo valART" alt="Logo da empresa valART" className=" max-w-32 max-h-32  md:mb-2 " />
                         </div>
-                        <div className="flex flex-col justify-center items-center 4k:w-7/12 text-start md:w-3/4  md:ml-[-220px] lg:w-1/2 xl:w-1/2  4k:ml-0">
+                        <div className="flex flex-col justify-center items-center  text-start md:w-3/4  md:ml-[-220px] lg:w-1/2 xl:w-1/2  4k:ml-0 4k:w-7/12">
                             <p className="text-indigo-800 w-11/12  mx-auto text-center  font-medium md:w-3/4 md:ml-auto md:text-center 4k:w-2/6">
                                 Dê vida aos seus espaços com a Valart! Especializada em gesso, nossa equipe transforma ambientes com elegância e inovação. Entre em contato e descubra como podemos criar o projeto dos seus sonhos. Sua transformação começa aqui!</p>
 
                             <Link to={urlWhatsApp} aria-label="Botão que abrirá o contato da empresa no WhatsApp" className="mx-auto my-10 bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors md:ml-64 md:mt-[60px] lg:ml-52 xl:ml-72 2xl:ml-80 4k:mr-80">Entrar em Contato</Link>
                         </div>
-                        <img src={imgHome} title="RApaz utilizando um nível" alt="Rapaz trabalhando e utilizando um nível" className="hidden md:flex md:absolute md:w-auto md:h-[317px] md:right-14 md:top-[270px] md:rounded-sm md:opacity-95 md:shadow-lg md:shadow-indigo-400  lg:right-44 xl:right-[350px] 2xl:right-96 4k:right-[800px] " />
+                        <img src={imgHome} title="RApaz utilizando um nível" alt="Rapaz trabalhando e utilizando um nível" className="hidden md:flex md:absolute md:w-auto md:h-[317px] md:right-14 md:top-[270px] md:rounded-sm md:opacity-95 md:shadow-lg md:shadow-indigo-400  lg:right-44 xl:right-[290px] 2xl:right-96 4k:right-[800px] " />
                     </div>
                     <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" rel="noopener noreferrer" ><FaWhatsapp className="hidden md:flex md:fixed md:left-20 md:top-[530px] xl:top-[75%] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132" /></Link>
                 </section>
