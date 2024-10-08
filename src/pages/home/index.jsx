@@ -17,7 +17,7 @@ export function Home() {
 
     return (
         <main>
-            <section className="bg-bgMain bg-cover bg-no-repeat bg-opacity-75">
+            <section className="bg-bgMain bg-cover bg-no-repeat bg-opacity-75"  rel="preload">
                 <header>
                     <nav className="h-16 w-full p-8 flex justify-between items-center ">
                         <div> <img src={logo} width={250} height={253} alt="Logo da empresa valART" className=" w-[100px] h-auto md:w-[150px] md:h-[150px] md:relative md:top-[50px] z-50 " /></div>
