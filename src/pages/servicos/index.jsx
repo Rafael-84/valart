@@ -90,9 +90,9 @@ export function Servicos() {
           <nav className="h-16 w-full p-8 flex justify-between items-center ">
             <div> <img src={logo} width={250} height={253} title="Logo valART" alt="Logo da empresa valART" className=" w-24 h-auto md:w-44 md:h-44 md:relative md:top-[50px] z-50 " /></div>
             <div className="flex items-center justify-center gap-4 p-1">
-              <Link to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
-              <Link to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
-              <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
+              <Link title="Home" to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
+              <Link title="Serviços" to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
+              <Link title="Contato" to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
             </div>
           </nav>
         </header>
@@ -139,10 +139,10 @@ export function Servicos() {
                 </div>
               </div>
               <h2 className="text-center mt-8  font-medium  text-rose-800 w-11/12 md:w-full lg:mt-0 ">A Valart oferece uma ampla gama de serviços de gesso, como forro de gesso acartonado, drywall, sancas e tetos decorativos. Nossa equipe garante acabamentos de alta qualidade e designs personalizados para reformas residenciais e comerciais. Também realizamos pintura, instalação e manutenção elétrica. Transforme seus ambientes com elegância e funcionalidade com a Valart! </h2>
-              <Link to={urlWhatsApp} aria-label="Botão que abrirá o contato da empresa no WhatsApp" className="my-8  mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors  ">Entrar em Contato</Link>
+              <Link title="Entrar em Contato" to={urlWhatsApp} aria-label="Botão que abrirá o contato da empresa no WhatsApp" className="my-8  mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors  ">Entrar em Contato</Link>
             </div>
           </div>
-          <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" rel="noopener noreferrer" ><FaWhatsapp className="hidden md:flex md:fixed md:right-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 " size={80} color="#0cb132" /></Link>
+          <Link title="Botão WhatssApp" to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" rel="noopener noreferrer" ><FaWhatsapp className="hidden md:flex md:fixed md:right-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 " size={80} color="#0cb132" /></Link>
         </section>
       </section>
       <section>
@@ -159,7 +159,7 @@ export function Servicos() {
 
         </Swiper>
         <div className="flex items-center justify-center  ">
-          <Link to={instagram} className=" flex items-center justify-center mx-auto text-indigo-800 mt-5 hover:text-rose-700 md:gap-2 4k:mt-40">
+          <Link title="Link Instagram" to={instagram} className=" flex items-center justify-center mx-auto text-indigo-800 mt-5 hover:text-rose-700 md:gap-2 4k:mt-40">
             <FaInstagram size={30} />
             <span className=" italic font-medium text-lg text-xs text-center  md:text-base">Acesse nossas redes socias para mais detalhes.</span>
           </Link>

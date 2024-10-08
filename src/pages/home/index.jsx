@@ -22,9 +22,9 @@ export function Home() {
                     <nav className="h-16 w-full p-8 flex justify-between items-center ">
                         <div> <img src={logo} width={250} height={253} title="Logo valART" alt="Logo da empresa valART" className=" w-24 h-auto md:w-44 md:h-44 md:relative md:top-[50px] z-50 " /></div>
                         <div className="flex items-center justify-center gap-4 p-1">
-                            <Link to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
-                            <Link to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
-                            <Link to={urlWhatsApp} className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
+                            <Link title="Home" to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
+                            <Link title="Serviços" to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
+                            <Link title="Contato" to={urlWhatsApp} className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
                         </div>
                     </nav>
                 </header>
