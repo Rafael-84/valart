@@ -26,10 +26,10 @@ export function Footer() {
                     <div className="flex items-center justify-center gap-2 text-sm text-center my-2 text-indigo-800 font-medium md:text-base"><HiOutlineMail size={20}/><p>{email}</p></div>
                     <div className="flex items-center justify-center gap-2  text-sm text-center text-indigo-800 font-medium md:text-base"><FaPhone size={20} /><Link title="WhatssApp" to={urlWhatsApp} className='hover:text-rose-700 '>Telefone: {telefone} </Link></div>
                 </div>
-                <di className='md:mr-16'>
+                <div className='md:mr-16'>
                     <h2 className="text-center font-bold text-lg text-rose-700  "> Nossas Redes Sociais</h2>
                     <div className="flex items-center justify-center gap-2 text-sm text-center my-2 text-indigo-800 font-medium   md:text-base"><FaInstagram  size={20} /><Link title="Instagram" to={instagram} className='hover:text-rose-700 ' >{insta}</Link></div>
-                </di>
+                </div>
             </div>
             <div className="flex justify-center items-center "><img src={logo} title="Logo valART" alt="Logo da empresa valART" className=" w-32 h-32  " /></div>
             <span className="text-sm text-center text-indigo-800 font-medium mb-5 mx-1 relative bottom-6 " >ValART Copyright ©{ano} | Todos os direitos Reservados </span>
