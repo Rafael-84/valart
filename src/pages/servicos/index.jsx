@@ -92,7 +92,7 @@ export function Servicos() {
             <div className="flex items-center justify-center gap-4 p-1">
               <Link to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
               <Link to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
-              <Link to={urlWhatsApp} target="_blank" className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
+              <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
             </div>
           </nav>
         </header>
@@ -102,7 +102,7 @@ export function Servicos() {
               <h3 className="text-indigo-800 font-bold text-center text-lg mt-10 md:mb-5" >Alguns de nossos serviços</h3>
               <div className="flex items-center justify-center flex-col w-11/12 mt-5  text-indigo-800 font-medium  lg:flex md:mb-20  lg:w-full lg:flex-row 4k:w-3/4 ">
                 <div className="hidden lg:flex lg:w-[250px] lg:h-[260px] xl:flex xl:w-[250px] xl:h-[260px] xl:relative xl:justify-center xl:items-center  xl:top-14 xl:left-10  2xl:left-14 4k:left-20">
-                  <img src={imgHome} alt="Homem utilizando uma ferramenta realizando um trabalho na parede" className="shadow-lg shadow-indigo-300 lg:w-full lg:h-full" />
+                  <img src={imgHome} alt="Homem utilizando uma ferramenta realizando um trabalho na parede" className="shadow-lg shadow-indigo-400 lg:w-full lg:h-full" />
                 </div>
                 <div className=" w-11/12 gap-2 md:grid md:grid-cols-2 md:gap-0 lg:flex lg:flex-row lg:gap-8 xl:flex xl:items-center xl:justify-between xl:h-auto">
                   <div className="flex items-center justify-center flex-col gap-2 md:w-3/4 md:justify-start md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto">
@@ -139,7 +139,7 @@ export function Servicos() {
                 </div>
               </div>
               <h2 className="text-center mt-8  font-medium  text-rose-800 w-11/12 md:w-full lg:mt-0 ">A Valart oferece uma ampla gama de serviços de gesso, como forro de gesso acartonado, drywall, sancas e tetos decorativos. Nossa equipe garante acabamentos de alta qualidade e designs personalizados para reformas residenciais e comerciais. Também realizamos pintura, instalação e manutenção elétrica. Transforme seus ambientes com elegância e funcionalidade com a Valart! </h2>
-              <Link to={urlWhatsApp} target="_blank" className="my-8  mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors  ">Entrar em Contato</Link>
+              <Link to={urlWhatsApp} aria-label="Botão que abrirá o contato da empresa no WhatsApp" target="_blank" className="my-8  mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors  ">Entrar em Contato</Link>
             </div>
           </div>
           <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="-blank" ><FaWhatsapp className="hidden md:flex md:fixed md:right-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 " size={80} color="#0cb132" /></Link>

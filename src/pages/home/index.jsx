@@ -37,9 +37,9 @@ export function Home() {
                             <p className="text-indigo-800 w-11/12  mx-auto text-center  font-medium md:w-3/4 md:ml-auto md:text-center 4k:w-2/6">
                                 Dê vida aos seus espaços com a Valart! Especializada em gesso, nossa equipe transforma ambientes com elegância e inovação. Entre em contato e descubra como podemos criar o projeto dos seus sonhos. Sua transformação começa aqui!</p>
 
-                            <Link to={urlWhatsApp} target="-blank" className="mx-auto my-10 mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors md:ml-64 md:mt-[60px] lg:ml-52 xl:ml-72 2xl:ml-80 4k:mr-80">Entrar em Contato</Link>
+                            <Link to={urlWhatsApp} aria-label="Botão que abrirá o contato da empresa no WhatsApp" target="-blank" className="mx-auto my-10 mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors md:ml-64 md:mt-[60px] lg:ml-52 xl:ml-72 2xl:ml-80 4k:mr-80">Entrar em Contato</Link>
                         </div>
-                        <img src={imgHome} alt="teste" className="hidden md:flex md:absolute md:w-auto md:h-[317px] md:right-14 md:top-[270px] md:rounded-sm md:opacity-95 md:shadow-lg md:shadow-indigo-300  lg:right-44 xl:right-[350px] 2xl:right-96 4k:right-[800px] " />
+                        <img src={imgHome} alt="Rapaz trabalhando e utilizando um nível" className="hidden md:flex md:absolute md:w-auto md:h-[317px] md:right-14 md:top-[270px] md:rounded-sm md:opacity-95 md:shadow-lg md:shadow-indigo-400  lg:right-44 xl:right-[350px] 2xl:right-96 4k:right-[800px] " />
                     </div>
                     <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" ><FaWhatsapp className="hidden md:flex md:fixed md:left-20 md:top-[530px] xl:top-[75%] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132" /></Link>
                 </section>
@@ -50,22 +50,22 @@ export function Home() {
                     <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] md:gap-8 lg:w-full lg:h-[300px] lg:justify-between xl:h-[350px] xl:gap-2  4k:w-1/2">
                         <h2 className="font-bold text-indigo-800 mt-2" >Em Gesso</h2>
                         <p className="mx-2 text-indigo-900 text-sm font-medium" >A Valart é especialista em serviços de gesso, oferecendo soluções como forro de gesso acartonado, drywall, sancas e molduras decorativas. Atuamos em reformas residenciais e comerciais, garantindo acabamentos de alta qualidade e estética impecável. Também realizamos instalação e manutenção de drywall, proporcionando conforto e praticidade aos seus ambientes.</p>
-                        <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
+                        <Link to="/servicos" aria-label="Link que levará para a página de serviços" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
                     </div>
                     <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] md:gap-10 lg:w-full lg:h-[300px] lg:justify-between lg:gap-8 xl:h-[350px] xl:gap-2 4k:w-1/2 ">
                         <h2 className="font-bold text-indigo-800 mt-2">Construção & Reforma</h2>
                         <p className="mx-2  text-indigo-900 text-sm font-medium" >A Valart é a sua parceira ideal em construção e reforma, especializada em transformar espaços com qualidade e eficiência. Nossa equipe experiente garante acabamentos impecáveis em projetos residenciais e comerciais, sempre priorizando a estética e a funcionalidade. Confie na Valart para renovar seu ambiente com estilo e precisão!</p>
-                        <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
+                        <Link to="/servicos" aria-label="Link que levará para a página de serviços" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
                     </div>
                     <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] lg:w-full lg:h-[300px] lg:justify-between lg:gap-8 xl:h-[350px] xl:gap-2  4k:w-1/2 ">
                         <h2 className="font-bold text-indigo-800 my-2">Elétrica</h2>
                         <p className="mx-2  text-indigo-900 text-sm font-medium" >A Valart é uma empresa especializada em serviços elétricos para residências e empresas. Oferece instalação e manutenção de sistemas elétricos, automação residencial, iluminação LED e adequações às normas de segurança. Com uma equipe qualificada, a Valart se destaca pela qualidade, eficiência e compromisso com a satisfação do cliente.</p>
-                        <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
+                        <Link to="/servicos" aria-label="Link que levará para a página de serviços" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
                     </div>
                     <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] lg:w-full lg:h-[300px] lg:justify-between lg:gap-8 xl:h-[350px] xl:gap-2 4k:w-1/2 ">
                         <h2 className="font-bold text-indigo-800 my-2">Stellframe</h2>
                         <p className="mx-2  text-indigo-900 text-sm font-medium" >A Valart oferece serviços especializados em steel frame, com soluções rápidas e eficientes para a construção civil. Realiza projetos de estruturas metálicas leves, garantindo durabilidade e resistência. A empresa cuida de todas as etapas, da elaboração do projeto à execução, sempre focando em qualidade, agilidade e sustentabilidade.</p>
-                        <Link to="/servicos" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
+                        <Link to="/servicos" aria-label="Link que levará para a página de serviços" className="p-2 bg-rose-700 rounded-md text-white font-bold hover:bg-rose-600 transition-colors ">Saiba Mais</Link>
                     </div>
                 </div>
                 <div className="flex flex-col items-center justify-center mx-2">
