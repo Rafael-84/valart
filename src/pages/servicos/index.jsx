@@ -1,6 +1,5 @@
 
 import { Link } from "react-router-dom";
-import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import { FeedbackAndContact } from "../../components/FeedBackAndContact";
 import imgHome from '../../assets/main/imgServices.jpg';
@@ -41,6 +40,8 @@ import imagemSLide26 from '../../assets/imgSlide/imgSlide27.jpg';
 import imagemSLide27 from '../../assets/imgSlide/imgSlide28.jpg';
 import imagemSLide28 from '../../assets/imgSlide/imgSlide29.jpg';
 
+import logo from '../../assets/header/logo-valart.png';
+
 export function Servicos() {
 
   const numeroTel = "5511969305119";
@@ -80,58 +81,69 @@ export function Servicos() {
     { id: 28, Image: imagemSLide28, name: 'Fotos de alguns trabalhos realizados pela valART.' },
   ]
 
-  /* lg:relative lg:justify-center lg:items-center lg:left-20 lg:top-72 xl:left-64 xl:top-64 2xl:left-[350px] 4k:left-[850px] */
+  
 
   return (
     <main>
-      <Header />
-      <section className="w-full flex justify-center h-full">
-        <div className=" w-full h-full flex items-center justify-center bg-bgMain bg-fundo bg-cover bg-no-repeat bg-opacity-75">
-          <div className="w-full h-full flex items-center justify-center flex-col md:w-11/12 md:mt-16   ">
-            <h3 className="text-indigo-800 font-bold text-center text-lg mt-10 md:mb-5" >Alguns de nossos serviços</h3>
-            <div className="flex items-center justify-center flex-col w-11/12 mt-5  text-indigo-800 font-medium  lg:flex md:mb-20  lg:w-full lg:flex-row 4k:w-3/4 ">
-              <div className="hidden lg:flex lg:w-[250px] lg:h-[260px] xl:flex xl:w-[250px] xl:h-[260px] xl:relative xl:justify-center xl:items-center  xl:top-14 xl:left-10  2xl:left-14 4k:left-20">
-                <img src={imgHome} alt="Homem utilizando uma ferramenta realizando um trabalho na parede" className="shadow-lg shadow-indigo-300 lg:w-full lg:h-full" />
-              </div>
-              <div className=" w-11/12 gap-2 md:grid md:grid-cols-2 md:gap-0 lg:flex lg:flex-row lg:gap-8 xl:flex xl:items-center xl:justify-between xl:h-auto">
-                <div className="flex items-center justify-center flex-col gap-2 md:w-3/4 md:justify-start md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto">
-                  <h2 className=" my-2 font-bold text-center lg:mt-0 xl:mt-0">Gessos</h2>
-                  <p className="text-center">Forros de gesso.</p>
-                  <p className="text-center">Sancas de gesso.</p>
-                  <p className="text-center">Drywall.</p>
-                  <p className="text-center">Gesso 3D.</p>
-                </div>
-
-                <div className="flex items-center justify-between flex-col my-7 gap-2  md:w-3/4 md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto" >
-                  <h2 className=" my-2 font-bold text-center lg:mt-0 xl:mt-0">Construção & Reforma</h2>
-                  <p className="text-center">Reformas residenciais e comerciais.</p>
-                  <p className="text-center">Acabamentos internos e externos.</p>
-                  <p className="text-center">Acabamentos internos e externos.</p>
-                  <p className="text-center">Projetos de ampliação.</p>
-                </div>
-
-                <div className="flex items-center justify-between flex-col my-7 gap-2  md:w-3/4 md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto" >
-                  <h2 className=" my-2 font-bold  md:mt-14 lg:mt-0 xl:mt-0">Elétrica</h2>
-                  <p className="text-center">Instalação de sistemas elétricos.</p>
-                  <p className="text-center">Manutenção e reparo elétrico.</p>
-                  <p className="text-center">Automação residencial.</p>
-                  <p className="text-center">Iluminação LED.</p>
-                </div>
-
-                <div className="flex items-center justify-between flex-col gap-2   md:w-3/4 md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto" >
-                  <h2 className=" my-2 font-bold text-center md:mt-14 lg:mt-0 xl:mt-0">Stellframe</h2>
-                  <p className="text-center">Construção de residências.</p>
-                  <p className="text-center">Reformas e ampliações.</p>
-                  <p className="text-center">Projetos comerciais.</p>
-                  <p className="text-center">Instalação de sistemas de isolamento.</p>
-                </div>
-              </div>
+      <section className="bg-bgMain bg-cover bg-no-repeat ">
+        <header>
+          <nav className="h-16 w-full p-8 flex justify-between items-center ">
+            <div> <img src={logo} width={250} height={250} alt="Logo da empresa valART" className=" w-[100px] h-auto md:w-[150px] md:h-[150px] md:relative md:top-[50px] z-50 " /></div>
+            <div className="flex items-center justify-center gap-4 p-1">
+              <Link to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
+              <Link to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
+              <Link to={urlWhatsApp} target="_blank" className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
             </div>
-            <h2 className="text-center mt-8  font-medium  text-rose-800 w-11/12 md:w-full lg:mt-0 ">A Valart oferece uma ampla gama de serviços de gesso, como forro de gesso acartonado, drywall, sancas e tetos decorativos. Nossa equipe garante acabamentos de alta qualidade e designs personalizados para reformas residenciais e comerciais. Também realizamos pintura, instalação e manutenção elétrica. Transforme seus ambientes com elegância e funcionalidade com a Valart! </h2>
-            <Link to={urlWhatsApp} target="_blank" className="my-8  mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors  ">Entrar em Contato</Link>
+          </nav>
+        </header>
+        <section className="w-full flex justify-center h-full">
+          <div className=" w-full h-full flex items-center justify-center ">
+            <div className="w-full h-full flex items-center justify-center flex-col md:w-11/12 md:mt-16   ">
+              <h3 className="text-indigo-800 font-bold text-center text-lg mt-10 md:mb-5" >Alguns de nossos serviços</h3>
+              <div className="flex items-center justify-center flex-col w-11/12 mt-5  text-indigo-800 font-medium  lg:flex md:mb-20  lg:w-full lg:flex-row 4k:w-3/4 ">
+                <div className="hidden lg:flex lg:w-[250px] lg:h-[260px] xl:flex xl:w-[250px] xl:h-[260px] xl:relative xl:justify-center xl:items-center  xl:top-14 xl:left-10  2xl:left-14 4k:left-20">
+                  <img src={imgHome} alt="Homem utilizando uma ferramenta realizando um trabalho na parede" className="shadow-lg shadow-indigo-300 lg:w-full lg:h-full" />
+                </div>
+                <div className=" w-11/12 gap-2 md:grid md:grid-cols-2 md:gap-0 lg:flex lg:flex-row lg:gap-8 xl:flex xl:items-center xl:justify-between xl:h-auto">
+                  <div className="flex items-center justify-center flex-col gap-2 md:w-3/4 md:justify-start md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto">
+                    <h2 className=" my-2 font-bold text-center lg:mt-0 xl:mt-0">Gessos</h2>
+                    <p className="text-center">Forros de gesso.</p>
+                    <p className="text-center">Sancas de gesso.</p>
+                    <p className="text-center">Drywall.</p>
+                    <p className="text-center">Gesso 3D.</p>
+                  </div>
+
+                  <div className="flex items-center justify-between flex-col my-7 gap-2  md:w-3/4 md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto" >
+                    <h2 className=" my-2 font-bold text-center lg:mt-0 xl:mt-0">Construção & Reforma</h2>
+                    <p className="text-center">Reformas residenciais e comerciais.</p>
+                    <p className="text-center">Acabamentos internos e externos.</p>
+                    <p className="text-center">Acabamentos internos e externos.</p>
+                    <p className="text-center">Projetos de ampliação.</p>
+                  </div>
+
+                  <div className="flex items-center justify-between flex-col my-7 gap-2  md:w-3/4 md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto" >
+                    <h2 className=" my-2 font-bold  md:mt-14 lg:mt-0 xl:mt-0">Elétrica</h2>
+                    <p className="text-center">Instalação de sistemas elétricos.</p>
+                    <p className="text-center">Manutenção e reparo elétrico.</p>
+                    <p className="text-center">Automação residencial.</p>
+                    <p className="text-center">Iluminação LED.</p>
+                  </div>
+
+                  <div className="flex items-center justify-between flex-col gap-2   md:w-3/4 md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto" >
+                    <h2 className=" my-2 font-bold text-center md:mt-14 lg:mt-0 xl:mt-0">Stellframe</h2>
+                    <p className="text-center">Construção de residências.</p>
+                    <p className="text-center">Reformas e ampliações.</p>
+                    <p className="text-center">Projetos comerciais.</p>
+                    <p className="text-center">Instalação de sistemas de isolamento.</p>
+                  </div>
+                </div>
+              </div>
+              <h2 className="text-center mt-8  font-medium  text-rose-800 w-11/12 md:w-full lg:mt-0 ">A Valart oferece uma ampla gama de serviços de gesso, como forro de gesso acartonado, drywall, sancas e tetos decorativos. Nossa equipe garante acabamentos de alta qualidade e designs personalizados para reformas residenciais e comerciais. Também realizamos pintura, instalação e manutenção elétrica. Transforme seus ambientes com elegância e funcionalidade com a Valart! </h2>
+              <Link to={urlWhatsApp} target="_blank" className="my-8  mx-auto bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors  ">Entrar em Contato</Link>
+            </div>
           </div>
-        </div>
-        <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="-blank" ><FaWhatsapp className="hidden md:flex md:fixed md:right-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 " size={80} color="#0cb132" /></Link>
+          <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="-blank" ><FaWhatsapp className="hidden md:flex md:fixed md:right-20 md:top-[530px] 4k:top-[930px] animate-bounce z-10 " size={80} color="#0cb132" /></Link>
+        </section>
       </section>
       <section>
         <h2 className="text-center  font-bold text-lg text-rose-700 mt-10 mb-5 md:mt-36 md:mb-10 lg:mb-0  " >Alguns de nossos trabalhos</h2>
