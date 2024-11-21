@@ -40,13 +40,13 @@ import imagemSLide26 from '../../assets/imgSlide/imgSlide27.jpg';
 import imagemSLide27 from '../../assets/imgSlide/imgSlide28.jpg';
 import imagemSLide28 from '../../assets/imgSlide/imgSlide29.jpg';
 
-import logo from '../../assets/header/logo-valart.png';
+import logoHeader from '../../assets/header/logo-valart-header.png';
 
 export function Servicos() {
 
   const numeroTel = "5511969305119";
   const urlWhatsApp = `https://wa.me/${numeroTel}`;
-  const instagram = "https://www.instagram.com/valart_loja?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==";
+  const instagram = "https://www.instagram.com/valart_servicos/";
 
   const data = [
     { id: 1, Image: imagemSLide1, name: 'Fotos de alguns trabalhos realizados pela valART.' },
@@ -88,7 +88,7 @@ export function Servicos() {
       <section className="bg-bgMain bg-cover bg-no-repeat bg-opacity-75">
         <header>
           <nav className="h-16 w-full p-8 flex justify-between items-center ">
-            <div> <img src={logo} width={250} height={253} title="Logo valART" alt="Logo da empresa valART" className=" w-24 h-auto md:w-44 md:h-44 md:relative md:top-[50px] z-50 " /></div>
+            <div> <Link to="/"><img src={logoHeader} width={250} height={252} title="Logo valART" alt="Logo da empresa valART" className=" w-24 h-auto md:w-44 md:h-44 md:relative md:top-[50px] z-50 " /></Link></div>
             <div className="flex items-center justify-center gap-4 p-1">
               <Link title="Home" to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
               <Link title="Serviços" to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
@@ -101,8 +101,8 @@ export function Servicos() {
             <div className="w-full h-full flex items-center justify-center flex-col md:w-11/12 md:mt-16   ">
               <h3 className="text-indigo-800 font-bold text-center text-lg mt-10 md:mb-5" >Alguns de nossos serviços</h3>
               <div className="flex items-center justify-center flex-col w-11/12 mt-5  text-indigo-800 font-medium  lg:flex md:mb-20  lg:w-full lg:flex-row 4k:w-3/4 ">
-                <div className="hidden lg:flex lg:w-[250px] lg:h-[260px] xl:flex xl:w-[250px] xl:h-[260px] xl:relative xl:justify-center xl:items-center  xl:top-14 xl:left-10  2xl:left-14 4k:left-20">
-                  <img src={imgHome} title="Rapaz utilizando uma ferramenta" alt="Homem utilizando uma ferramenta realizando um trabalho na parede" className="shadow-lg shadow-indigo-400 lg:w-full lg:h-full" />
+                <div className="hidden lg:flex lg:w-[250px] lg:h-[260px] xl:flex xl:w-[250px] xl:h-[300px] xl:relative xl:justify-center xl:items-center  xl:top-14 xl:left-10  2xl:left-14 4k:left-20">
+                  <img width={250} height={375} src={imgHome} title="Rapaz utilizando uma ferramenta" alt="Homem utilizando uma ferramenta, realizando um trabalho na parede" className="shadow-lg shadow-indigo-400 lg:w-full lg:h-full" />
                 </div>
                 <div className=" w-11/12 gap-2 md:grid md:grid-cols-2 md:gap-0 lg:flex lg:flex-row lg:gap-8 xl:flex xl:items-center xl:justify-between xl:h-auto">
                   <div className="flex items-center justify-center flex-col gap-2 md:w-3/4 md:justify-start md:my-0 lg:mt-0 lg:w-11/12 lg:h-auto xl:mt-0 xl:w-11/12 xl:h-auto">
@@ -159,7 +159,7 @@ export function Servicos() {
 
         </Swiper>
         <div className="flex items-center justify-center  ">
-          <Link title="Link Instagram" to={instagram} className=" flex items-center justify-center mx-auto text-indigo-800 mt-5 hover:text-rose-700 md:gap-2 4k:mt-40">
+          <Link title="Link Instagram" to={instagram} target="_blank" className=" flex items-center justify-center mx-auto text-indigo-800 mt-5 hover:text-rose-700 md:gap-2 4k:mt-40">
             <FaInstagram size={30} />
             <span className=" italic font-medium text-lg text-center  md:text-base">Acesse nossas redes socias para mais detalhes.</span>
           </Link>

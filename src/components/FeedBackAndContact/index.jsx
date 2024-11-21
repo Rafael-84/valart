@@ -9,31 +9,14 @@ export function FeedbackAndContact() {
 
     return (
         <main>
-            <section className="flex items-center justify-center w-full h-96 bg-bgEscolher bg-cover bg-no-repeat  mt-10 mb-8 md:flex md:items-center md:justify-center md:mt-24 md:h-72" >
+            <section className="flex items-center justify-center w-full h-96 bg-bgEscolher bg-cover bg-no-repeat  mt-10 mb-28 md:flex md:items-center md:justify-center md:mt-24 md:h-72" >
                 <div className="flex  items-center justify-center w-full h-72 mx-1 ">                   
                     <div className="flex flex-col justify-center items-center gap-4 w-11/12 mt-6">
                         <p className="text-corHeader font-bold text-lg">Por que escolher ValART?</p>
                         <span className=" text-corHeader font-medium  mb-4 "> Escolher a Valart é optar por qualidade e inovação em serviços de gesso. Nossa equipe experiente oferece acabamentos impecáveis e designs personalizados para reformas residenciais e comerciais. Além de forro de gesso acartonado e drywall em São Bernardo do Campo e região, disponibilizamos pintura, instalação elétrica e isolamento térmico. Priorizamos a satisfação do cliente e utilizamos materiais sustentáveis. Transforme seu espaço com a Valart!</span>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div className="flex flex-col items-center gap-5 mb-7 md:mb-28">
-                    <h2 className="text-center my-8 font-bold text-lg text-rose-700 mx-1  ">O que os nossos clientes dizem sobre nós!</h2>
-
-                    <div className="flex flex-col mb-20 gap-20 md:flex md:flex-row md:gap-20 md:my-20 ">
-                        <div>
-                            <span>print feedback</span>
-                        </div>
-                        <div>
-                            <span>print feedback</span>
-                        </div>
-                        <div>
-                            <span>print feedback</span>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </section>            
             <section className=" p-2 my-8 bg-bgContato bg-cover bg-no-repeat opacity-90" >
                 <div className="flex flex-col items-center mx-3 my-5 gap-7">
                     <p className="text-corHeader font-bold text-lg">Entre em Contato Conosco</p>
