@@ -1,4 +1,5 @@
 
+import React from "react";
 import { Link } from "react-router-dom";
 import { Footer } from "../../components/Footer";
 import { FeedbackAndContact } from "../../components/FeedBackAndContact";
@@ -25,7 +26,7 @@ export function Home() {
                         <div className="flex items-center justify-center gap-4 p-1">
                             <Link title="Home" to="/" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors ">Home</Link>
                             <Link title="Serviços" to="/servicos" className="text-sm text-indigo-700 font-bold hover:text-rose-600 transition-colors  ">Serviços</Link>
-                            <Link title="Contato" to={urlWhatsApp} className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
+                            <Link title="Contato" to={urlWhatsApp} target="_blank" className="hidden md:flex md:p-1 md:bg-rose-700 md:rounded md:text-white md:font-bold md:hover:bg-rose-600 md:transition-colors">Contato</Link>
                         </div>
                     </nav>
                 </header>
@@ -38,16 +39,16 @@ export function Home() {
                             <p className="text-indigo-800 w-11/12  mx-auto text-center  font-medium md:w-3/4 md:ml-auto md:text-center 4k:w-2/6">
                                 Dê vida aos seus espaços com a Valart! Especializada em gesso, nossa equipe transforma ambientes com elegância e inovação. Entre em contato e descubra como podemos criar o projeto dos seus sonhos. Sua transformação começa aqui!</p>
 
-                            <Link to={urlWhatsApp} aria-label="Botão que abrirá o contato da empresa no WhatsApp" className="mx-auto my-10 bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors md:ml-64 md:mt-[60px] lg:ml-52 xl:ml-72 2xl:ml-80 4k:mr-80">Entrar em Contato</Link>
+                            <Link to={urlWhatsApp} target="_blank" aria-label="Botão que abrirá o contato da empresa no WhatsApp" className="mx-auto my-10 bg-rose-700 p-2 rounded-md text-white font-bold hover:bg-rose-600 transition-colors md:ml-64 md:mt-[60px] lg:ml-52 xl:ml-72 2xl:ml-80 4k:mr-80">Entrar em Contato</Link>
                         </div>
                         <img width={211} height={317} src={imgHome} title="Rapaz utilizando um nível" alt="Rapaz trabalhando e utilizando um nível" className="hidden md:flex md:absolute md:w-auto md:h-[317px] md:right-14 md:top-[270px] md:rounded-sm md:opacity-95 md:shadow-lg md:shadow-indigo-400  lg:right-44 xl:right-[290px] 2xl:right-96 4k:right-[800px] " />
                     </div>
-                    <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" rel="noopener noreferrer" ><FaWhatsapp className="hidden md:flex md:fixed md:left-20 md:top-[530px] xl:top-[75%] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132" /></Link>
+                    <Link to={urlWhatsApp} aria-label="Botão flutuante que abrirá o contato da empresa no WhatsApp" target="_blank" rel="noopener noreferrer" ><FaWhatsapp className="hidden md:flex md:fixed md:right-20 md:top-[530px] xl:top-[75%] 4k:top-[930px] animate-bounce z-10 hover:shadow-slate-700 " size={80} color="#0cb132" /></Link>
                 </section>
             </section>
             <section className="flex items-center justify-center flex-col bg-corHeader">
                 <h1 className="text-center my-8 font-bold text-lg text-rose-700 md:mt-28 md:mb-5  ">Nossos Serviços</h1>
-                <div className="flex items-center justify-center flex-col my-9 gap-4 md:mx-10 md:mb-20 md:w-11/12 md:gap-10 lg:grid lg:grid-cols-2 xl:flex xl:flex-row xl:w-11/12 4k:w-1/2">
+                <div className="flex items-center justify-center flex-col my-9 gap-10 md:mx-10 md:mb-20 md:w-11/12 md:gap-10 lg:grid lg:grid-cols-2 xl:flex xl:flex-row xl:w-11/12 4k:w-1/2">
                     <div className="w-11/12 h-full bg-fundo flex items-center justify-center flex-col gap-4 p-4 md:h-[260px] md:gap-8 lg:w-full lg:h-[300px] lg:justify-between xl:h-[350px] xl:gap-2  4k:w-1/2">
                         <h2 className="font-bold text-indigo-800 mt-2" >Em Gesso</h2>
                         <p className="mx-2 text-indigo-900 text-sm font-medium" >A Valart é especialista em serviços de gesso, oferecendo soluções como forro de gesso acartonado, drywall, sancas e molduras decorativas. Atuamos em reformas residenciais e comerciais, garantindo acabamentos de alta qualidade e estética impecável. Também realizamos instalação e manutenção de drywall, proporcionando conforto e praticidade aos seus ambientes.</p>
