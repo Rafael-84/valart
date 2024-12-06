@@ -159,7 +159,7 @@ export function Servicos() {
 
         </Swiper>
         <div className="flex items-center justify-center  ">
-          <Link title="Link Instagram" to={instagram} target="_blank" className=" flex items-center justify-center mx-auto text-indigo-800 mt-5 hover:text-rose-700 md:gap-2 4k:mt-40">
+          <Link title="Link Instagram" to={instagram} target="_blank" rel="noopener noreferrer" className=" flex items-center justify-center mx-auto text-indigo-800 mt-5 hover:text-rose-700 md:gap-2 4k:mt-40">
             <FaInstagram size={30} />
             <span className=" italic font-medium text-lg text-center  md:text-base">Acesse nossas redes socias para mais detalhes.</span>
           </Link>
